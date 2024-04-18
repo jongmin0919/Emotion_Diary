@@ -1,0 +1,61 @@
+@import url(../App.css);
+
+.viewer > section{
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.viewer > section > h4{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.viewer .emotion_img_wrapper {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-size: 25px;
+}
+
+.viewer .emotion_img_wrapper_1 {
+  background-color: var(--positive-button-color);
+}
+.viewer .emotion_img_wrapper_2 {
+  background-color: rgb(157, 215, 114);
+}
+.viewer .emotion_img_wrapper_3 {
+  background-color: rgb(253, 206, 23);
+}
+.viewer .emotion_img_wrapper_4 {
+  background-color: rgb(253, 132, 70);
+}
+.viewer .emotion_img_wrapper_5 {
+  background-color: rgb(253, 86, 95);
+}
+
+.viewer .content_wrapper{
+  width: 100%;
+  background-color: var(--default-gray-color);
+  border-radius: 5px;
+  /* 텍스트가 범위를 넘어설 때 줄바꿈을 허용하지 않겠다는 뜻, 즉 단어가 잘리면서 줄바꿈이 되는 부자연스러운 현상을 막고자 '문자의 흐름을 유지하겠다'는 뜻 */
+  word-break: keep-all;
+  /* 줄바꿈이 발생되어야 하는 때에 줄 바꿈을 허용합니다. 즉 위의 속성과 같이 사용하면 특정 단어가 잘려 줄바꿈 되지 않고 자연스럽게 줄바꿈 할 수 있습니다. */
+  overflow-wrap: break-word;
+}
+
+.viewer .content_wrapper > p{
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2.5;
+}

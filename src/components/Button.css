@@ -1,0 +1,21 @@
+@import url(../App.css);
+
+.Button{
+  background-color: var(--default-gray-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px ;
+  font-size: 18px;
+  white-space: nowrap; /* 창이 줄어들어도 요소가 줄바꿈 되지 않도록 */
+}
+
+.Button_POSITIVE{
+  background-color: var(--positive-button-color);
+  color: white;
+}
+
+.Button_NEGATIVE{
+  background-color: var(--negative-button-color);
+  color: white;
+}
